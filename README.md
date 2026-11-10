@@ -115,4 +115,3 @@ Galgotias University
 
 ---
 
-*Developed as a full-stack web development project using Spring Boot and MySQL.*
