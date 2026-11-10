@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head('Room details')}"></head>
+<body><header th:replace="~{fragments :: nav}"></header>
+<main><section class="detail-hero"><div class="container"><a href="/rooms" class="back-link"><i class="bi bi-arrow-left"></i> Back to rooms</a><div id="roomDetails"><div class="spinner-border text-gold mt-5"></div></div></div></section>
+<section class="section-pad"><div class="container"><div class="row g-5"><div class="col-lg-7"><div class="section-kicker">MAKE IT YOURS</div><h2 class="h2-serif">Reserve your stay</h2><p class="lead-muted">Choose your dates and let us take care of the rest.</p></div><div class="col-lg-5"><form id="bookingForm" class="luxury-form"><input type="hidden" id="bookingRoomId"><label>Check in<input type="date" id="bookingCheckIn" required></label><label>Check out<input type="date" id="bookingCheckOut" required></label><button class="btn btn-gold w-100" type="submit">Confirm reservation <i class="bi bi-arrow-right ms-2"></i></button><div id="bookingMessage" class="small mt-3"></div></form></div></div></div></section></main>
+<footer th:replace="~{fragments :: footer}"></footer><script th:src="@{/js/app.js}" src="/js/app.js"></script><script th:src="@{/js/room-details.js}" src="/js/room-details.js"></script>
+</body></html>
